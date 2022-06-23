@@ -20,6 +20,12 @@ class Constants
 	Suggestion for constant naming convention:
 		MENU_SUBMENU_SUBMENUNAME
 	*/
+
+	const STATUS_USERINTERFACE_WLAN		= self::PARAM . 'status_wlanm_info1_t.gch';
+	const STATUS_USERINTERFACE_ETHERNET		= self::PARAM . 'pon_status_lan_info_t.gch';
+	const STATUS_USERINTERFACE_USB		= self::PARAM . 'status_usb_info_t.gch';
+
 	const NETWORK_LAN_LAN2LAN_ISOLATION	= self::PARAM . 'net_lanlanisolate_t.gch';
 	const NETWORK_LAN_DHCP_SERVER		= self::PARAM . 'net_dhcp_dynamic_t.gch';
+	
 }
