@@ -27,9 +27,11 @@ class LAN extends ZteApi
 
 			// need some tweaks and testing
 			$value = html_entity_decode($key->find('td2 input', 0)->attr['value']);
-
-            $data[$keys] = $value;
+			$data[$keys] = boolval($value);
         }
+
+		// why encode and decode ? 
+		return json_decode(json_encode($data));
 	}
 
     public function dhcpServer()
