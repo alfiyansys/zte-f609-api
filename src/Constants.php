@@ -15,4 +15,6 @@ class Constants
     const WAN_CONNECTION     = self::PARAM . 'IPv46_status_wan2_if_t.gch';
     const PON_INFORMATION    = self::PARAM . 'pon_status_link_info_t.gch';
     const MOBILE_NETWORK     = self::PARAM . 'status_mobnet_info_t.gch';
+
+	const NETWORK_LAN_DHCP_SERVER	= self::PARAM . 'net_dhcp_dynamic_t.gch';
 }
