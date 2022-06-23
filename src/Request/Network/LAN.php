@@ -20,8 +20,16 @@ class LAN extends ZteApi
 	public function lan2lanIsolation(){
 		$request = $this->zte->request($this->zte->modemUrl . Constants::NETWORK_LAN_LAN2LAN_ISOLATION);
 		$dom     = str_get_html($request);
+		
+		foreach ($dom->find('table#BpduConf tr') as $key) {
+            $cari  = $key->find('td');
+            $keys  = strtolower(str_replace(' ', '_', $cari[0]->plaintext));
 
-		echo $dom;
+			// need some tweaks and testing
+			$value = html_entity_decode($key->find('td2 input', 0)->attr['value']);
+
+            $data[$keys] = $value;
+        }
 	}
 
     public function dhcpServer()
