@@ -26,6 +26,7 @@ class ZteApi
         $this->modemUrl = "http://$ipModem";
 
         $this->status   = new Request\Status\Status($this);
+        $this->network   = new Request\Network\LAN($this);
     }
 
     /**
