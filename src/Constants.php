@@ -16,6 +16,10 @@ class Constants
     const PON_INFORMATION    = self::PARAM . 'pon_status_link_info_t.gch';
     const MOBILE_NETWORK     = self::PARAM . 'status_mobnet_info_t.gch';
 
+	/*
+	Suggestion for constant naming convention:
+		MENU_SUBMENU_SUBMENUNAME
+	*/
 	const NETWORK_LAN_LAN2LAN_ISOLATION	= self::PARAM . 'net_lanlanisolate_t.gch';
 	const NETWORK_LAN_DHCP_SERVER		= self::PARAM . 'net_dhcp_dynamic_t.gch';
 }
